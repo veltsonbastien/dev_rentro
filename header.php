@@ -55,7 +55,13 @@
                 dots:true,
                 centerMode: true,
                 });
-             }); 
+            $('.closeEditBox').click(function(){
+               $('.edit-box').fadeOut(); 
+           }); 
+            $('.concernButton').click(function() { 
+               $('.edit-box').fadeIn(); 
+           }); 
+        }); 
      </script>
  </head>
  </html>
@@ -65,7 +71,7 @@
         <div class='container-fluid'>
             <div class='navbar-header'>
             <a class='navbar-brand' href='index.php' style = 'color: #55efc4; margin-right: 5px; font-size: 25px; margin-left: 3px; letter-spacing: 1.5px;
-            '> <i class='fas fa-fire-alt'></i> Rentro</a>
+            '> <i class='fas fa-fire-alt'></i> Rentro <div class ='dev'>DEV</div>   </a>
             </div>
             <form class='search-form navbar-left' action='/action_page.php'>
             <div class='input-group'>
@@ -97,8 +103,8 @@
         </nav>
         <nav class='navbar-second'>
             <ul class='nav navbar-under'>
-            <li class = 'main-links'><a class = 'lower-main-links' href='seller-information.php'>I'm a Seller</a></li>
-            <li class = 'main-links'><a class = 'lower-main-links' href='buyer-information.php'>I'm a Buyer</a></li>
+            <li class = 'main-links'><a class = 'lower-main-links' href='seller-information.php'>Filed Reports</a></li>
+            <li class = 'main-links'><a class = 'lower-main-links' href='buyer-information.php'>Statistics</a></li>
             <li class = 'main-links'><a class = 'lower-main-links' href='customer-service.php'>Customer Services</a></li>
             </ul>
         </nav>   

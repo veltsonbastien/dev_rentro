@@ -694,3 +694,56 @@ hr {
     border-top: 1px solid #888;
     width: 50%;
 }
+
+/************ MAIN STYLES FOR THE ISSUES DIV ***************/ 
+
+.edit-box{
+    background: white;
+    position: fixed;
+    border-radius: 3px;
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 100px;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 2;
+    box-shadow: 0.1px 0.1px 5px black;
+}
+
+.edit-box-input{
+    margin-top: 10px; 
+}
+
+.edit-box-textarea{
+    width: 90%;
+    height: 100%;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    padding: 10px; 
+}
+
+.edit-box-button{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.closeEditBox{
+    background: none;
+    position: absolute;
+    right: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px 10px;
+    outline: none; 
+}
+
+.dev{
+    position: absolute;
+    left: 150px;
+    top: 28px;
+    font-family: fantasy;
+    letter-spacing: 3.5px;
+    color: darkcyan;
+}
