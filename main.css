@@ -1,0 +1,696 @@
+/**COLOR SCHEME
+* blue: #2083bf
+* second blue: #1a5379
+* background: (cloud white) #ecf0f1
+* green color: #55efc4
+**/
+
+
+body{
+    background: #ecf0f1;
+    margin: 0em; 
+    padding: 0em; 
+    line-height: 20px; 
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+
+.loader-div{
+    background: #dfe6e9;
+    clear: both;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2; 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+} 
+
+.loader{
+    margin-left: auto;
+    margin-right: auto; 
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar{
+    background: #1a5379;
+    border: none; 
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 10px 0px; 
+    margin-bottom: 0px; 
+    float: none; 
+}
+
+.navbar-nav{
+    position: absolute; 
+    right: 10px; 
+}
+
+.navbar-form{
+    border: 1px solid black; 
+    width: 70%; 
+}
+
+.navbar-second{
+    background: #2083bf;
+    text-align: CENTER; 
+}
+
+.navbar-under{
+    background: #2083bf;
+    display: inline-flex; 
+}
+
+ul.navbar-under{
+    text-align: CENTER; 
+    vertical-align: middle !important;
+}
+
+li.navbar-under{
+    display: inline-flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    -ms-flex-direction: column; 
+    padding: 0px 30px !important; 
+}
+
+.upper-main-links:hover, .lower-main-links:hover{
+ color: lightgrey !important;
+}
+
+.main-links{
+    padding: 0px 30px; 
+}
+
+.search-form{
+    width: 70%; 
+    padding-top: 10px;
+    transform: translateX(9%);
+}
+
+.glyphicon-search{
+    right: 20%; 
+}
+
+a{
+   color: white; 
+}
+
+.main-links:hover{
+   color: lightgrey !important; 
+}
+
+a:visited, a:active, a:focus, a:hover{
+    background: none !important; 
+}
+
+.showme-div{
+  width: 100%; 
+  text-align: CENTER; 
+}
+
+.showme-text{
+    margin-bottom: 15px; 
+}
+
+.container-label{
+    display: inline-flex; 
+    padding: 0px 20px; 
+}
+
+input[type=checkbox], input[type=radio] {
+    margin: 5px 5px 0;
+    margin-top: 1px\9;
+    line-height: normal;
+}
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    z-index: 2;
+    margin-left: -1px;
+    height: 34px;
+}
+
+/*************** STYLES SPECIFICALLY FOR SELLER INFORMATION PAGE ******************/
+
+.title-text{
+    text-align: CENTER; 
+    margin-top: 50px; 
+    margin-bottom: 30px; 
+}
+
+.paragraph-text{
+    text-align: CENTER; 
+    font-size: 20px; 
+    
+}
+
+#SI-img{
+    width: 100%;
+    height: 50%;
+    margin-top: 30px; 
+}
+
+.SI-info-boxes{
+    list-style-type: none;  
+    margin-top: 35px; 
+    padding-inline-start: 0px;
+    
+}
+
+.SI-info-boxes-li{
+    margin-top: 30px;
+    background: #f9f9f9; 
+    border-radius: 3px; 
+    padding-left: 180px;
+    padding-right: 50px;
+    transition: box-shadow 0.3s; 
+    transition: transform 0.3s; 
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+}
+
+.SI-info-boxes-li:hover{
+    box-shadow: 0.1px 0.1px 10px #999; 
+    transform: scale(1.01); 
+    cursor: pointer; 
+}
+
+
+
+.SI-info-boxes-span{
+    padding: 5px; 
+}
+
+.SI-info-boxes-p{
+    margin-left: 10px; 
+}
+
+.fa-user-plus, .fa-shipping-fast, .fa-clock,
+.fa-shopping-cart, .fa-smile, .fa-exchange-alt{
+    position: absolute;
+    vertical-align: middle;
+    left: 50px; 
+    margin-top: 30px;
+    font-size: 90px; 
+    color: lightgrey;
+}
+
+.SI-bottom-text{
+    margin-top: 80px; 
+    text-align: CENTER;
+}
+
+.TOU-text{
+    margin-top: 25px;
+    margin-left: 15px; 
+}
+
+a:hover{
+    cursor: pointer; 
+}
+
+.SI-bottom-button{
+    background-color: #2083bf;
+    border-color: #2083bf;
+    border-radius: 3px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 19px;
+    margin-left: 30px; 
+} 
+
+.SI-bottom-button:hover{
+    transition-timing-function: linear;
+    transition: background-color 0.7s; 
+    transition: border 0.7s; 
+    transition: box-shadow 0.7s; 
+    background-color: #1a5379; 
+    border-color: #1a5379; 
+    box-shadow: 0.5px 1.5px 10px #999;
+}
+
+/***** MOSTLY FOR THE CUSTOMER SERVICE PAGE **/
+
+.CS-top-text{
+    text-align: CENTER;
+    margin-top: 15px;
+    color: #555;
+}
+
+.CS-ul{
+  list-style-type: none;
+  margin-top: 50px;
+  display: inline-flex;
+  padding-inline-start: 0em; 
+  text-align: CENTER;
+}
+
+.CS-li{ 
+    box-shadow: none; 
+    background: #fff;
+    margin-left: 10px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    justify-content: center;
+    transition: box-shadow 0.3s; 
+    transition: transform 0.3s; 
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+}
+
+.CS-li:hover{
+    box-shadow: 0.1px 0.1px 10px #999; 
+    transform: scale(1.015); 
+    cursor: pointer; 
+}
+
+.CS-li-h3{
+    margin-top: 10px; 
+}
+
+.fa-file, .fa-phone-square, .fa-envelope{
+   color: #2083bf;
+   font-size: 60px;
+   margin-bottom: 10px; 
+}
+
+
+/**MOSTLY FOR THE FOOTER ***/ 
+
+.navFooter{
+      position: relative;
+      clear: both; 
+      width: 100%; 
+      background: #1a5379;
+      padding: 10px;
+      text-align: CENTER;
+      color: grey;
+      margin-top: 11%;
+      bottom: 0;
+      left: 0; 
+}
+
+.navFooter-ul{
+      padding-inline-start: 0em; 
+      margin-block-start: 0em; 
+      list-style-type: none; 
+      display: inline-flex;
+      width: 70%; 
+      margin-top: 30px; 
+      margin-bottom: 30px; 
+      margin-left: 15%; 
+      margin-right: 15%;  
+}
+
+.navFooter-li-primary{
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    opacity: 0.7; 
+}
+
+.navFooter-li-secondary{
+    font-size: 12px;
+    display: list-item;
+    text-align: CENTER;
+} 
+
+.first-link{
+    margin-top: 10px; 
+}
+
+.bottom-nav:hover{
+  text-decoration: none; 
+}
+
+/************* MOSTLY FOR SIGNIN FORM *************/
+.signin-form-ul{
+    list-style-type: none;
+    display: block; 
+    padding-inline-start: 0em;
+    margin-block-start: 0em;
+}
+
+.signin-form-li{
+    margin-top: 20px;
+    display: grid;
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.signin-input{
+  padding: 5px; 
+}
+
+.signin-input-pin{
+    width: 10%;
+    text-align: CENTER;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 0.1px solid #999;
+}
+
+.signin-label-pin{
+    text-align: CENTER;
+}
+
+.create-account-link{
+    color: #2083bf; 
+    text-align: CENTER; 
+    font-size: 18px; 
+}
+
+.create-account-link:hover{
+    cursor: pointer; 
+    color: #1a5379; 
+    text-decoration: none; 
+}
+
+/** MOSTLY FOR CREATE ACCOUNT PAGE **/
+
+.signin-label-pn{
+}
+
+.signin-input-pn{
+    width: 15%;
+    border: 0.1px solid #999;
+}
+
+.info-text{
+    font-size: 12px;
+    font-style: italic;
+}
+
+.acct-small-modal::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #ecf0f1 transparent;
+}
+
+.acct-small-modal{
+ position: absolute;
+    top: 60px;
+    right: 12px;
+    background: #ecf0f1;
+    padding: 10px 10px 15px 10px;
+    border: 1px solid grey;
+    border-radius: 5px; 
+    display: none; 
+}
+
+
+.acct-small-modal-ul{
+  padding-inline-start: 0em; 
+  list-style-type: none; 
+  text-align: CENTER;
+}
+
+.acct-small-modal-li{
+    margin-top: 10px;
+    padding: 7.5px 5px; 
+    border-radius: 3px; 
+}
+
+.acct-small-modal-li:hover{
+    background: lightgrey; 
+}
+
+.acct-small-modal-a{
+  color: #1a5379;
+}
+
+.acct-small-modal-a:hover{
+    color: #2083bf !important;
+    text-decoration: none !important; 
+}
+
+.logout-button{
+    background: none;
+    border: none;
+    color: #1a5379;
+    margin-bottom: -15px;
+    outline: none; 
+}
+
+/****** MOSTLY FOR SELL PAGE ****/
+
+.register-div{
+
+}
+
+.register-div-ul{
+  list-style-type: none;
+  padding-inline-start: 0em;
+  margin-block-start: 0em; 
+}
+
+.register-div-li{
+  display: grid; 
+  width: 50%; 
+  margin-left: 50%; 
+  transform: translateX(-50%); 
+  margin-top: 20px;
+}
+
+.register-div-input{
+  padding: 5px; 
+  margin-top:10px; 
+}
+
+.register-div-input-ls{
+    width: 7.5%;
+    text-align: -WEBKIT-CENTER;
+    margin-left: 50%;
+    transform: translateX(-50%);  
+}
+
+.register-div-input-rp{
+    width: 10%;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%); 
+}
+
+.sell-upper-texts{
+    display: inline-flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#register-text{
+ margin-right: 10px; 
+ transition: transform 0.5s; 
+}
+
+#register-text:hover, #save-text:hover{
+  cursor: pointer; 
+  transform: scale(1.03); 
+}
+
+#text-seperator{
+    opacity: 0.5;
+    font-size: 18px;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+#save-text{
+ margin-left: 10px; 
+  transition: transform 0.5s; 
+}
+
+.isSelected{
+    opacity: 1;
+    transform: scale(1.03); 
+}
+
+.notSelected{
+    opacity: 0.5; 
+    transform: scale(0.95); 
+}
+
+.choose-img{
+    margin-left: 50%;
+    transform: translateX(-30%);
+    margin-top: 22px;
+}
+
+/*** confirm item page ***/
+
+.confirm-item{
+    width: 50%;
+    margin-top: 50px;
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: white; 
+    border-radius: 10px; 
+}
+
+.confirm-item-ul{
+  background: #fff;
+  list-style-type: none;
+  padding-inline-start: 0em;
+  margin-block-start: 0em; 
+  border-radius: 10px; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  margin-left: 30px; 
+  display: inline-flex;
+}
+
+.confirm-item-li{
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px; 
+    margin-top: 5px;
+}
+
+.confirm-item-label{
+   margin-bottom: -4px; 
+   margin-top:20px; 
+   font-size: 18px; 
+}
+
+.confirm-item-name{
+    font-size: 25px; 
+    margin-bottom: 20px; 
+    text-align: LEFT;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+
+img {
+  vertical-align: middle;
+  width:100%;
+  height:300px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.containers {
+  position: relative;
+  width: 50%;
+  margin-left: -20px;
+  margin-right: 30px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.row{
+    position: relative;
+    justify-content: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+ display: inline-flex;
+ margin-top: 5px
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+#previewIMG{
+    width: 100px; 
+    height: 75px; 
+}
+
+.product-text{
+  width: 50%; 
+  margin-top: 0px; 
+}
+
+#pL{
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: CENTER;
+}
+
+.bottom-buttons{
+    margin-left: 50%;
+    width: fit-content;
+    transform: translateX(-50%);
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #888;
+    width: 50%;
+}
